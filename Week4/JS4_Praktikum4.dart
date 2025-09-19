@@ -28,10 +28,21 @@ void main() {
 
   // Langkah 5
   var login = 'Manager';
-  var nav3 = ['Home', 'Furniture', 'Plants', if (login case 'Manager') 'Inventory'];
+  var nav3 = [
+    'Home',
+    'Furniture',
+    'Plants',
+    if (login case 'Manager') 'Inventory',
+  ];
   print(nav3);
 
   login = 'Admin';
   nav3 = ['Home', 'Furniture', 'Plants', if (login case 'Manager') 'Inventory'];
-  print(nav3);  
+  print(nav3);
+
+  // Langkah 6
+  var listOfInts = [1, 2, 3];
+  var listOfStrings = ['#0', for (var i in listOfInts) '#$i'];
+  assert(listOfStrings[1] == '#1');
+  print(listOfStrings);
 }
