@@ -16,4 +16,13 @@ void main() {
   var NIMlist = [...NIM];
 
   print("NIM: $NIMlist");
+
+  // Langkah 4
+  bool promoActive = true;
+  var nav1 = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
+  print(nav1);
+
+  promoActive = false;
+  var nav2 = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
+  print(nav2);
 }
