@@ -25,4 +25,13 @@ void main() {
   promoActive = false;
   var nav2 = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
   print(nav2);
+
+  // Langkah 5
+  var login = 'Manager';
+  var nav3 = ['Home', 'Furniture', 'Plants', if (login case 'Manager') 'Inventory'];
+  print(nav3);
+
+  login = 'Admin';
+  nav3 = ['Home', 'Furniture', 'Plants', if (login case 'Manager') 'Inventory'];
+  print(nav3);  
 }
