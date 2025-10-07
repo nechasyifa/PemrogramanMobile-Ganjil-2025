@@ -13,7 +13,10 @@ class HomePage extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter layout: Necha Syifa Syafitri - 2341720167',
       home: Scaffold(
-        appBar: AppBar(title: const Text('Shopping List')),
+        appBar: AppBar(
+          title: const Text('Shopping List'),
+          backgroundColor: Colors.blue,
+        ),
         body: Container(
           margin: EdgeInsets.all(8),
           child: ListView.builder(
