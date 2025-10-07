@@ -55,7 +55,7 @@ class MyApp extends StatelessWidget {
     Widget textSection = Container(
       padding: const EdgeInsets.all(32),
       child: const Text(
-        '🌷 Hortensia Garden adalah taman bunga yang menampilkan ' 
+        '🌷 Hortensia Garden adalah taman bunga yang menampilkan '
         'keindahan bunga hortensia berwarna ungu, biru, dan merah muda '
         'yang tumbuh subur di bawah rindangnya pepohonan hijau.🌳✨ '
         'Suasana taman ini terasa sejuk dan menenangkan, '
@@ -72,7 +72,19 @@ class MyApp extends StatelessWidget {
       title: 'Flutter layout: Necha Syifa Syafitri - 2341720167',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter layout demo')),
-        body: Column(children: [titleSection, buttonSection, textSection]),
+        body: ListView(
+          children: [
+            Image.asset(
+              'images/garden.jpg',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover,
+            ),
+            titleSection,
+            buttonSection,
+            textSection,
+          ],
+        ),
       ),
     );
   }
