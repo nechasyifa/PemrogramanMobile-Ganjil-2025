@@ -10,12 +10,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter layout: Necha Syifa Syafitri - 2341720167',
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text('Flutter layout demo'),
-        ),
-        body: const Center(
-          child: Text('Hello World'),
-        ),
+        appBar: AppBar(title: const Text('Flutter layout demo')),
+        body: const Center(child: Text('Hello World')),
       ),
     );
   }
