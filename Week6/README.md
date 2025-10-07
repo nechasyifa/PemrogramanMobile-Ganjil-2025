@@ -15,3 +15,8 @@
 
 ## Praktikum 5: Membangun Navigasi di Flutter
 ![Screenshot layout_flutter](screenshot/06.png)
+
+## Tugas Praktikum 2
+![Screenshot layout_flutter](screenshot/07.png)
+![Screenshot layout_flutter](screenshot/08.png)
+![Screenshot layout_flutter](screenshot/09.png)
