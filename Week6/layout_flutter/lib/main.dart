@@ -51,12 +51,28 @@ class MyApp extends StatelessWidget {
       ],
     );
 
+    // Praktikum 3 Langkah 1
+    Widget textSection = Container(
+      padding: const EdgeInsets.all(32),
+      child: const Text(
+        '🌷 Hortensia Garden adalah taman bunga yang menampilkan ' 
+        'keindahan bunga hortensia berwarna ungu, biru, dan merah muda '
+        'yang tumbuh subur di bawah rindangnya pepohonan hijau.🌳✨ '
+        'Suasana taman ini terasa sejuk dan menenangkan, '
+        'dengan cahaya matahari yang menembus sela dedaunan, '
+        'menciptakan pemandangan yang alami dan memanjakan mata. '
+        'Tempat ini menjadi spot favorit bagi pecinta alam dan fotografi '
+        'yang ingin menikmati keindahan bunga dalam suasana yang tenang dan segar. 🍃💐\n'
+        '(Necha Syifa Syafitri - 2341720167)',
+        softWrap: true,
+      ),
+    );
     // Praktikum 1 Langkah 2
     return MaterialApp(
       title: 'Flutter layout: Necha Syifa Syafitri - 2341720167',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter layout demo')),
-        body: Column(children: [titleSection, buttonSection]),
+        body: Column(children: [titleSection, buttonSection, textSection]),
       ),
     );
   }
