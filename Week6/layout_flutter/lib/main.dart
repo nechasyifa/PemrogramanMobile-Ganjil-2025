@@ -7,7 +7,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // Langkah 4
+    // Praktikum 1 Langkah 4
     Widget titleSection = Container(
       padding: const EdgeInsets.all(32),
       child: Row(
@@ -39,15 +39,29 @@ class MyApp extends StatelessWidget {
       ),
     );
 
+    // Praktikum 2 Langkah 2
+    Color color = Theme.of(context).primaryColor;
+
+    Widget buttonSection = Row(
+      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      children: [
+        _buildButtonColumn(color, Icons.call, 'CALL'),
+        _buildButtonColumn(color, Icons.near_me, 'ROUTE'),
+        _buildButtonColumn(color, Icons.share, 'SHARE'),
+      ],
+    );
+
+    // Praktikum 1 Langkah 2
     return MaterialApp(
       title: 'Flutter layout: Necha Syifa Syafitri - 2341720167',
       home: Scaffold(
         appBar: AppBar(title: const Text('Flutter layout demo')),
-        body: Column(children: [titleSection]),
+        body: Column(children: [titleSection, buttonSection]),
       ),
     );
   }
 
+  // Praktikum 2 Langkah 1
   Column _buildButtonColumn(Color color, IconData icon, String label) {
     return Column(
       mainAxisSize: MainAxisSize.min,
